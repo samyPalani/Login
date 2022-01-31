@@ -1,0 +1,15 @@
+create database elab;
+
+
+use elab;
+
+create table user(id int(6) unsigned auto_increment primary key,
+name varchar(50),
+email varchar(50),
+dob varchar(50),
+pass varchar(50));
+  
+
+alter table user add role varchar(10);
+
+insert into user(name,email,dob,pass,role) values ('a', 'a@gmail.com','24-05-2001','admin','ADMIN');
